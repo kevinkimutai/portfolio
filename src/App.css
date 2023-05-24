@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--white-color);
+  font-family: var(--header-font);
+  background-color: var(--white-color);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.text-gradient {
+  color: #261b14;
+  background-image: -webkit-linear-gradient(315deg, #261b14, #3a2315);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.bg-gradient-dark {
+  background-color: hsla(22, 46%, 15%, 1);
+  background-image: radial-gradient(
+      at 30% 62%,
+      hsla(54, 31%, 11%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 54% 39%, hsla(271, 22%, 14%, 1) 0px, transparent 50%);
+}
+.text-gradient-orange {
+  color: #e95011;
+  background-image: -webkit-linear-gradient(180deg, #e95011, #eb9852, #e26812);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.wave-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 7rem;
+}
+
+.wave-bottom .shape-fill {
+  fill: var(--white-color);
+}
+
+.wave-upwards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-upwards svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 8rem;
+  transform: rotateY(180deg);
+}
+
+.wave-upwards .shape-fill {
+  fill: var(--white-color);
+}
+.wrapper {
+  position: relative;
+  min-height: 8rem;
+}

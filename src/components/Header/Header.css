@@ -1,0 +1,7 @@
+.header-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-primary-color);
+  background-image: var(--bg-primary-image);
+  position: relative;
+}
