@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "../../assets/skills/JavaScript frameworks-amico.png";
 
 import { AiOutlineFilePdf } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -35,7 +36,7 @@ const Banner = () => {
         </motion.button>
       </div>
       <div className="banner__hero-container">
-        <img src="JavaScript frameworks-amico.png" alt="hero" />
+        <img src={Image} alt="hero" />
       </div>
     </motion.div>
   );

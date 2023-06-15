@@ -23,7 +23,7 @@
 }
 .title__summary {
   max-width: 80%;
-  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.5rem);
+  font-size: clamp(1rem, 0.818rem + 0.91vw, 1.8rem);
   margin-bottom: 3rem;
 }
 .title__btn {

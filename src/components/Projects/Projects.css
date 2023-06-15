@@ -17,18 +17,17 @@
   flex-wrap: wrap;
 }
 .project {
-  width: 50rem;
+  width: 45%;
   display: flex;
+  flex-direction: column;
   margin: 2rem;
   cursor: pointer;
 }
-.project__hero-container {
-  display: flex;
-  flex: 1;
-}
-.project__hero-container img {
+
+.project img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  max-height: 20rem;
 }
 .project__details-container {
   display: flex;
@@ -36,15 +35,14 @@
   flex: 1;
   width: 100%;
   background: var(--white-color);
-  font-size: 1.3rem;
   padding: 1rem;
 }
 .project__details-container h2 {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
 }
 .project__details-container p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 .project__details-container button {
