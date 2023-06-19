@@ -2,8 +2,6 @@ import React from "react";
 import Banner from "../Banner/Banner";
 import Nav from "../Nav/Nav";
 
-import { motion } from "framer-motion";
-
 import "./Header.css";
 
 const Header = () => {
