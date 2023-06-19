@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 import Image from "../../assets/skills/logo-1-removebg-preview-removebg-preview.png";
 
-import { motion, useTime, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
 import "./Nav.css";
 
@@ -29,9 +29,6 @@ const navItems = [
 
 const Nav = () => {
   const [toggleNav, setToggleNav] = useState();
-
-  const time = useTime();
-  const rotate = useTransform(time, [0, 4000], [0, 360], { clamp: false });
 
   const container = {
     hidden: { opacity: 0, scale: 0, y: -20 },

@@ -1,14 +1,4 @@
-import {
-  useAnimationFrame,
-  useMotionValue,
-  useScroll,
-  useSpring,
-  useTransform,
-  useVelocity,
-} from "framer-motion";
-import React, { useRef } from "react";
-
-import { wrap } from "@motionone/utils";
+import React from "react";
 
 import "./Skills.css";
 import { SKILLITEMS } from "../../constants/constants";

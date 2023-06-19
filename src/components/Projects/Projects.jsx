@@ -1,7 +1,6 @@
 import React from "react";
 
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 
 import "./Projects.css";
 import { SKILLITEMS } from "../../constants/constants";
@@ -58,7 +57,6 @@ const projectItems = [
 ];
 
 const Projects = () => {
-  const navigate = useNavigate();
   return (
     <motion.section className="projects-section bg-gradient-dark">
       <motion.div>
