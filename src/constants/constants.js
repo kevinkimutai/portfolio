@@ -5,6 +5,8 @@ import sassImg from "../assets/skills/sass-removebg-preview.png";
 import TsImg from "../assets/skills/typescript.png";
 import reduxImg from "../assets/skills/redux-removebg-preview.png";
 import reactImg from "../assets/skills/logo192.png";
+import firebaseImg from "../assets/skills/firebase-removebg-preview.png";
+import graphQLImg from "../assets/skills/graphql-removebg-preview.png";
 
 export const SKILLITEMS = [
   { img: mongodbImg, title: "MongoDB" },
@@ -14,4 +16,13 @@ export const SKILLITEMS = [
   { img: TsImg, title: "TypeScript" },
   { img: reduxImg, title: "Redux" },
   { img: reactImg, title: "React" },
+  { img: firebaseImg, title: "Firebase" },
+  { img: graphQLImg, title: "GraphQL" },
 ];
+
+//tailwind
+//react native
+//graphql
+//apollo
+//Express
+//Go

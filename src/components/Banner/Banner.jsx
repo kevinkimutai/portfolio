@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 
 import "./Banner.css";
 
+import Pdf from "../../assets/Kevin Kimutai.pdf";
+
 const Banner = () => {
   const container = {
     hidden: { opacity: 0 },
@@ -27,13 +29,15 @@ const Banner = () => {
           and engaging user experience through efficient website development,
           proactive feature optimization and relentless debugging
         </p>
-        <motion.button
-          whileTap={{ scale: 1.1 }}
-          className="title__btn bg-gradient-dark"
-        >
-          <AiOutlineFilePdf className="btn-icon" />
-          check out my CV
-        </motion.button>
+        <a href={Pdf}>
+          <motion.button
+            whileTap={{ scale: 1.1 }}
+            className="title__btn bg-gradient-dark"
+          >
+            <AiOutlineFilePdf className="btn-icon" />
+            check out my CV
+          </motion.button>
+        </a>
       </div>
       <div className="banner__hero-container">
         <img src={Image} alt="hero" />

@@ -8,29 +8,36 @@ import { SKILLITEMS } from "../../constants/constants";
 
 const projectItems = [
   {
-    techUsed: [SKILLITEMS[0].img],
+    techUsed: [SKILLITEMS[6].img, [SKILLITEMS[7].img]],
     cover:
       "https://images.unsplash.com/photo-1621955964441-c173e01c135b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=886&q=80",
     name: "Netflix Clone",
     sumary:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "The Netflix clone project is a web application that replicates the basic functionalities of Netflix. It includes user authentication for secure access and integrates the TMDB API to retrieve and display movie and TV show information. Users can browse, search, and stream content similar to the original Netflix platform.",
     githubLink: "https://github.com/kevinkimutai/netflix-react-clone",
     productionLink: "https://my-netflix-react-clone.netlify.app/",
   },
   {
-    techUsed: [SKILLITEMS[0].img],
+    techUsed: [SKILLITEMS[6].img, [SKILLITEMS[7].img], [SKILLITEMS[5].img]],
     cover:
       "https://images.unsplash.com/photo-1471248026681-35a45d5530a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
     name: "SokoBora E-commerce frontend",
     sumary:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "The food menu website project is a web application that allows users to explore a wide variety of food items and their descriptions. It offers a user-friendly interface for browsing different categories, searching for specific dishes, and viewing detailed information about each item",
     githubLink: "https://github.com/kevinkimutai/sokobora-food-order-app",
     productionLink: "https://sokobora-food-app.netlify.app/",
   },
   {
-    techUsed: [SKILLITEMS[0].img],
+    techUsed: [
+      SKILLITEMS[6].img,
+      SKILLITEMS[0].img,
+      SKILLITEMS[2].img,
+      SKILLITEMS[5].img,
+      SKILLITEMS[4].img,
+      SKILLITEMS[8].img,
+    ],
     cover:
-      " https://images.unsplash.com/photo-1508974823332-931ff03d2d10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+      " https://images.unsplash.com/photo-1556228149-0b37a8638663?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80",
     name: "Giftr",
     sumary:
       "Giftr is a gifting e commerce site that allows users to find the perfect and unique giftto gift theirloved ones on any occassion. Dont know what your looking for,make use of our chatbot to find the perfect gift for your loved ones.We also offer delivery services,the gifts are delivered fully wrapped in either a basket or gift-box.Pay on delivery or through our app",
@@ -65,23 +72,33 @@ const Projects = () => {
               transition={{ once: true }}
               key={project.name}
               className="project"
-              onClick={() => {
-                window.location.replace(project.productionLink);
-              }}
             >
               <img src={project.cover} alt={project.name} />
 
               <div className="project__details-container">
                 <h2 className="text-gradient">{project.name}</h2>
                 <p className="text-gradient">{project.sumary}</p>
-                <button
-                  className="bg-gradient-dark"
-                  onClick={() => {
-                    window.location.replace(project.githubLink);
-                  }}
-                >
-                  <span className="text-gradient-orange"> Github</span>
-                </button>
+                <h3 className="text-gradient">Tech Used</h3>
+                <div className="project__tech-container">
+                  {project.techUsed.map((tech) => (
+                    <div className="project__tech-img">
+                      <img src={tech} alt="tech" />
+                    </div>
+                  ))}
+                </div>
+                <div className="button-links__container">
+                  <a href={project.githubLink}>
+                    <button className="bg-gradient-dark links-btn">
+                      <span className="text-gradient-orange"> Github</span>
+                    </button>
+                  </a>
+
+                  <a href={project.productionLink}>
+                    <button className="bg-gradient-dark links-btn">
+                      <span className="text-gradient-orange">Live</span>
+                    </button>
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}

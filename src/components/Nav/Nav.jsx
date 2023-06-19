@@ -6,6 +6,7 @@ import {
   AiOutlineTag,
   AiOutlineMenu,
 } from "react-icons/ai";
+import Image from "../../assets/skills/logo-1-removebg-preview-removebg-preview.png";
 
 import { motion, useTime, useTransform } from "framer-motion";
 
@@ -59,12 +60,7 @@ const Nav = () => {
         animate={"visible"}
         className="nav"
       >
-        <motion.img
-          className="nav__logo"
-          style={{ rotate }}
-          src={"logo-1-removebg-preview.png"}
-          alt="logo"
-        />
+        <img className="nav__logo" src={Image} alt="logo" />
         <motion.ul className="nav-list">
           {navItems.map(({ icon, name }) => (
             <motion.li
