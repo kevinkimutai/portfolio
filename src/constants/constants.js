@@ -7,6 +7,9 @@ import reduxImg from "../assets/skills/redux-removebg-preview.png";
 import reactImg from "../assets/skills/logo192.png";
 import firebaseImg from "../assets/skills/firebase-removebg-preview.png";
 import graphQLImg from "../assets/skills/graphql-removebg-preview.png";
+import RNImg from "../assets/skills/react-native-removebg-preview.png";
+import MySql from "../assets/skills/MySQL-Logo-removebg-preview.png";
+import go from "../assets/skills/Go-logo-removebg-preview.png";
 
 export const SKILLITEMS = [
   { img: mongodbImg, title: "MongoDB" },
@@ -18,6 +21,9 @@ export const SKILLITEMS = [
   { img: reactImg, title: "React" },
   { img: firebaseImg, title: "Firebase" },
   { img: graphQLImg, title: "GraphQL" },
+  { img: RNImg, title: "React native" },
+  { img: MySql, title: "MySql" },
+  { img: go, title: "GoLang" },
 ];
 
 //tailwind
