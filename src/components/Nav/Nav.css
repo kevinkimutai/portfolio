@@ -10,6 +10,10 @@
   object-fit: contain;
   cursor: pointer;
 }
+.portfolio-icon {
+  font-size: 4.5rem;
+  color: #261b14;
+}
 .nav-list {
   display: flex;
   align-items: center;

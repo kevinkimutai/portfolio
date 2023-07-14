@@ -6,7 +6,7 @@ import {
   AiOutlineTag,
   AiOutlineMenu,
 } from "react-icons/ai";
-import Image from "../../assets/skills/logo-1-removebg-preview-removebg-preview.png";
+import { GiArrowhead } from "react-icons/gi";
 
 import { motion } from "framer-motion";
 
@@ -57,7 +57,8 @@ const Nav = () => {
         animate={"visible"}
         className="nav"
       >
-        <img className="nav__logo" src={Image} alt="logo" />
+        {/* <img className="nav__logo" src={Image} alt="logo" /> */}
+        <GiArrowhead className="portfolio-icon" />
         <motion.ul className="nav-list">
           {navItems.map(({ icon, name }) => (
             <motion.li

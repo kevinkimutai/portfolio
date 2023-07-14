@@ -46,13 +46,14 @@ const projectItems = [
   },
 
   {
-    techUsed: [SKILLITEMS[0].img],
-    cover: "https://cdn.mos.cms.futurecdn.net/xz4NVQhHaHShErxar7YLn.jpg",
-    name: "Tesla Clone",
+    techUsed: [SKILLITEMS[1].img, SKILLITEMS[4].img],
+    cover:
+      "https://images.unsplash.com/photo-1585503418537-88331351ad99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+    name: "Car Hire",
     sumary:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
-    githubLink: "https://github.com/kevinkimutai/tesla-website-clone",
-    productionLink: "https://my-tesla-website-clone.netlify.app/",
+      "Discover the freedom of the open road with our wide selection of rental cars. Whether you're planning a road trip, business travel, or simply need a reliable ride, we've got you covered. Choose from a diverse fleet of vehicles and enjoy flexible rental options that suit your needs. Experience convenience, affordability, and quality service with our car hire platform. Book your car today and start your adventure!",
+    githubLink: "https://github.com/kevinkimutai/car-rental-frontend",
+    productionLink: "https://car-rental-frontend-iota.vercel.app/",
   },
 ];
 

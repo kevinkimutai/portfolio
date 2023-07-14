@@ -35,7 +35,7 @@ const Banner = () => {
             className="title__btn bg-gradient-dark"
           >
             <AiOutlineFilePdf className="btn-icon" />
-            check out my CV
+            Check Out CV
           </motion.button>
         </a>
       </div>
