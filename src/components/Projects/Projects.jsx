@@ -60,8 +60,8 @@ const projectItems = [
 const Projects = () => {
   return (
     <motion.section className="projects-section bg-gradient-dark">
-      <motion.div>
-        <h1>Projects</h1>
+      <h1>Projects</h1>
+      <motion.div className="wrapper-projects">
         <div className="projects-container">
           {projectItems.map((project) => (
             <motion.div
