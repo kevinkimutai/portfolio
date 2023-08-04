@@ -6,7 +6,7 @@ import {
   AiOutlineTag,
   AiOutlineMenu,
 } from "react-icons/ai";
-import { GiArrowhead } from "react-icons/gi";
+import { TbBrandGravatar } from "react-icons/tb";
 
 import { motion } from "framer-motion";
 
@@ -58,7 +58,11 @@ const Nav = () => {
         className="nav"
       >
         {/* <img className="nav__logo" src={Image} alt="logo" /> */}
-        <GiArrowhead className="portfolio-icon" />
+        <div className="portfolio-dev">
+          <TbBrandGravatar className="portfolio-icon" />
+          <span>Dev</span>
+        </div>
+
         <motion.ul className="nav-list">
           {navItems.map(({ icon, name }) => (
             <motion.li

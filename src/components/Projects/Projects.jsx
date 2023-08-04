@@ -9,7 +9,7 @@ const projectItems = [
   {
     techUsed: [SKILLITEMS[6].img, [SKILLITEMS[7].img]],
     cover:
-      "https://icon-library.com/images/netflix-icon-black/netflix-icon-black-10.jpg",
+      "https://www.comingsoon.net/wp-content/uploads/sites/3/2019/04/luciferheader.jpg",
     name: "Netflix Clone",
     sumary:
       "The Netflix clone project is a web application that replicates the basic functionalities of Netflix. It includes user authentication for secure access and integrates the TMDB API to retrieve and display movie and TV show information. Users can browse, search, and stream content similar to the original Netflix platform.",
@@ -18,7 +18,8 @@ const projectItems = [
   },
   {
     techUsed: [SKILLITEMS[6].img, [SKILLITEMS[7].img], [SKILLITEMS[5].img]],
-    cover: "https://clipart-library.com/img1/1125632.jpg",
+    cover:
+      "https://img.freepik.com/premium-vector/food-drink-old-school-vintage-ribbon-banner-with-text-food-drink-black-white-chalk-graphic-chalkboard-poster-menu-bar-pub-restaurant-cafe-food-court_136321-1353.jpg",
     name: "SokoBora E-commerce frontend",
     sumary:
       "The food menu website project is a web application that allows users to explore a wide variety of food items and their descriptions. It offers a user-friendly interface for browsing different categories, searching for specific dishes, and viewing detailed information about each item",

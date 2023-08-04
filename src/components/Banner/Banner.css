@@ -1,11 +1,10 @@
 .banner {
-  height: calc(100vh - 98px);
+  height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 2rem 4rem;
-  margin-top: -4rem;
 }
 .banner__title-container {
   display: flex;
@@ -39,6 +38,7 @@
   cursor: pointer;
   text-transform: capitalize;
   color: var(--white-color);
+  margin-bottom: 4rem;
 }
 .btn-icon {
   font-size: 1.8rem;
@@ -54,15 +54,18 @@
   object-fit: contain;
 }
 @media screen and (max-width: 1100px) {
-  .banner {
+  /* .banner {
     margin-top: -4rem;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) {
   .banner {
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 6rem;
+  }
+  .title__btn {
+    margin-bottom: 0;
   }
   .banner__hero-container img {
     max-width: 80%;

@@ -3,16 +3,27 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 2rem 4rem;
 }
 .nav__logo {
   width: 12rem;
   object-fit: contain;
   cursor: pointer;
 }
+.portfolio-dev {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+}
+.portfolio-dev span {
+  font-size: small;
+  color: #261b14;
+  font-weight: 600;
+}
 .portfolio-icon {
   font-size: 4.5rem;
-  color: #261b14;
+  color: var(--white-color);
 }
 .nav-list {
   display: flex;
@@ -59,10 +70,13 @@
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: 600;
-  color: var();
+  /* color: var(); */
 }
 
 @media screen and (max-width: 480px) {
+  .nav {
+    padding: 2rem;
+  }
   .nav__sm {
     display: block;
   }
