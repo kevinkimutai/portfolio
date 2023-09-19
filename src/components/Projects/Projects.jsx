@@ -55,6 +55,21 @@ const projectItems = [
     githubLink: "https://github.com/kevinkimutai/car-rental-frontend",
     productionLink: "https://car-rental-frontend-iota.vercel.app/",
   },
+  {
+    techUsed: [
+      SKILLITEMS[0].img,
+      SKILLITEMS[1].img,
+      SKILLITEMS[4].img,
+      SKILLITEMS[12].img,
+    ],
+    cover:
+      "https://ideas.darden.virginia.edu/sites/default/files/2019-02/201901_Parmar_Airbnb.jpg",
+    name: "AirBnb Clone",
+    sumary:
+      "As the developer of this Airbnb clone, I built a platform that allows users to create accounts, search for accommodations, and make secure bookings. Property owners can list their properties with detailed information, and both users and property owners have profiles with reviews and ratings. Beautiful UI ensuring a safe and enjoyable user experience.",
+    githubLink: "https://github.com/kevinkimutai/airbnb-clone",
+    productionLink: "https://airbnb-clone-plum-one.vercel.app",
+  },
 ];
 
 const Projects = () => {
@@ -80,7 +95,7 @@ const Projects = () => {
                 <h3 className="text-gradient">Tech Used</h3>
                 <div className="project__tech-container">
                   {project.techUsed.map((tech) => (
-                    <div className="project__tech-img">
+                    <div key={tech} className="project__tech-img">
                       <img src={tech} alt="tech" />
                     </div>
                   ))}

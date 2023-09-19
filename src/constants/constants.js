@@ -10,6 +10,11 @@ import graphQLImg from "../assets/skills/graphql-removebg-preview.png";
 import RNImg from "../assets/skills/react-native-removebg-preview.png";
 import MySql from "../assets/skills/MySQL-Logo-removebg-preview.png";
 import go from "../assets/skills/Go-logo-removebg-preview.png";
+import prisma from "../assets/skills/prisma.png";
+import docker from "../assets/skills/docker.-removebg-preview.png";
+import kubernetes from "../assets/skills/kubernetes-removebg-preview.png";
+import terraform from "../assets/skills/terraform-removebg-preview.png";
+import rabbitmq from "../assets/skills/rabbitmq-removebg-preview.png";
 
 export const SKILLITEMS = [
   { img: mongodbImg, title: "MongoDB" },
@@ -24,6 +29,11 @@ export const SKILLITEMS = [
   { img: RNImg, title: "React native" },
   { img: MySql, title: "MySql" },
   { img: go, title: "GoLang" },
+  { img: prisma, title: "Prisma" },
+  { img: docker, title: "Docker" },
+  { img: kubernetes, title: "Kubernetes" },
+  { img: terraform, title: "Terraform" },
+  { img: rabbitmq, title: "RabbitMQ" },
 ];
 
 //tailwind
